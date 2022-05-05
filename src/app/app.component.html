@@ -1,0 +1,52 @@
+<h1>RxJs Workouts by Balaji Ganesan</h1>
+
+<div class="container">
+  <h2>Simple Js features like SetTimeout,SetInterval and addEventListners are also works like an Observable</h2>
+
+  Counter: <h1 id="timer"></h1>
+</div>
+
+<div class="container">
+  <h2>Timer <i>let observable$=timer(1000)</i></h2>
+  rxjs timer: <h1 id="rxjstimer"></h1>
+</div>
+
+<div class="container" style="display:flex;max-width:100vw;flex-wrap: wrap;">
+  <h2>Custom observable for an API call, implemented with Observable contract</h2>
+  <div *ngFor="let x of apinames" style="border:0.3px solid #646464">{{x.API}}</div>
+</div>
+
+<div class="container">
+  <h2>Map operator</h2>
+  Source: <h1 id="source"></h1>
+  newSource : <h1 id="newSource"></h1>
+</div>
+<div class="container">
+  <h2>Reactive Design</h2>
+  <div *ngFor="let x of corsApis$ | async" style="border:0.3px solid greenyellow">{{x.API}}</div>
+  <div *ngFor="let x of nonCorsApis$ | async" style="border:0.3px solid burlywood">{{x.API}}</div>
+</div>
+<div class="container">
+  <h2>Concat Operatr</h2>
+  <h6>see console</h6>
+  
+</div>
+
+<div class="container" *ngIf="orderCall">
+<p>{{amazon.name}}</p>
+<p>{{amazon.price}}</p>
+<button id="payBtn" (click)="makePayment()">Pay</button>
+
+</div>
+
+<div class="container" >
+  <h2>Switch Map operator</h2>
+  <form [formGroup]="carForm" (ngSubmit)="saveAddress()" style="display:flex;flex-direction:column;">
+    <input formControlName="id" placeholder="id" name="id" value="4">
+    <input formControlName="name" placeholder="name" name="name" value="Vijay">
+    <input formControlName="DrivingLicense" placeholder="DrivingLicense" name="DrivingLicense" value="TN0000590">
+    <input formControlName="car" placeholder="car" name="car" value="Honda amaze">
+    <input formControlName="country" placeholder="country" name="country" value="India">
+    <button type="submit" style="background-color: cyan; margin:5px;" >Save</button>
+</form>
+</div>

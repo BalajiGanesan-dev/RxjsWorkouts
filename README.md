@@ -1,7 +1,11 @@
 # RxjsWorkouts
-I've tried few examples for different Rxjs operators
 
-Need to run json server along with Angular serve
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
-To run angular : ng serve
-To run Json-Server : json-server --watch db.json
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+Run `json-server --watch db.json` for a json server
+
